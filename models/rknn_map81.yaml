@@ -1,0 +1,10 @@
+class: rknn_detect_yolov5.Detector
+opt:
+  model: "../map81_1920x1920.rknn"
+  size: [ 1920, 1920 ]
+  masks: [ [ 0, 1, 2 ], [ 3, 4, 5 ], [ 6, 7, 8 ] ]
+  anchors: [ [ 15,6 ], [ 11,10 ], [ 8,22 ], [ 19,20 ], [ 16,41 ], [ 33,39 ], [ 32,97 ], [ 74,147 ], [ 166,96 ] ]
+  names: ['lep_1', 'lep_2', 'lep_3', 'lep_4']
+  conf_thres: 0.45
+  iou_thres: 0.45
+  platform: 0
